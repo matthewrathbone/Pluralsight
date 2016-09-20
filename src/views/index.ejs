@@ -106,10 +106,24 @@
                     <div class="row">
                         <br>
                         <div class="col-md-2 col-sm-3 text-center">
-
+                            Sign in
+                            <form name="signInForm"
+                                  action="/auth/signIn"
+                                  method="post">
+                                Username: <input name="username" id="username">
+                                Password: <input name="password" id="password">
+                                <button type="submit" id="Sign up">Sign in</button>
+                            </form>
                         </div>
                         <div class="col-md-10 col-sm-9">
-
+                            Sign up
+                            <form name="signUpForm"
+                                action="/auth/signUp"
+                                method="post">
+                                Username: <input name="username" id="username">
+                                Password: <input name="password" id="password">
+                                <button type="submit" id="Sign up">Sign up</button>
+                            </form>
                         </div>
                     </div>
 

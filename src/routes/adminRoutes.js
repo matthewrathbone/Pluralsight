@@ -7,13 +7,21 @@ var books = [
     title:  'War and Peace',
     genre:  'Historical Fiction',
     author: 'Lev Nikolayevich Tolstoy',
+    bookId: 656,
     read:   false
   },
   {
     title:  'Les Miserables',
     genre:  'Historical Fiction',
     author: 'Lev Nikolayevich Tolstoy',
+    bookId: 24280,
     read:   false
+  },
+  {
+    title: 'The Time Machine',
+    genre: 'Science Fiction',
+    author: 'H G Wells',
+    read: false
   },
   {
     title:  'A Journey into the center of the Earth',
@@ -53,7 +61,6 @@ var router = function (nav) {
           db.close();
         });
       });
-      // res.send('Inserting books');
     });
 
   return adminRouter;
